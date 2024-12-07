@@ -1,6 +1,6 @@
-import pictaverseVid from './../img/pictaverseMov.mp4';
-import dungeonMov from './../img/dungeonMov3.mp4';
-import pigLatinMov from './../img/pigLatinMov.mp4';
+import pictaverseVid from './../img/pictaverse.png';
+import dungeonMov from './../img/dungeonDarkly.png';
+import pigLatinMov from './../img/pigLatin.png';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import galaxyPic from './../img/solar-years.png';
@@ -13,10 +13,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         accent: {
-            main: '#a87cd1',
+            main: '#6bad65',
             light: '#E9DB5D',
             dark: '#A29415',
-            contrastText: '#242105',
+            contrastText: '#FFFFFF',
         },
     },
 });
@@ -40,14 +40,7 @@ export default function Projects() {
                             <h3>Pictaverse</h3>
                             <Row>
                                 <Col sm={5} md={5}>
-                                    <video width="550" height="350" autoPlay loop>
-                                        <source src={pictaverseVid} type="video/mp4" controls />
-                                        <source src="movie.ogg" type="video/ogg" />
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    {/* <div class="h_iframe">
-        <iframe src={pictaverseVid} frameborder="0" allowfullscreen></iframe>
-    </div> */}
+                                    <img src={pictaverseVid} width="100%" alt='Pictaverse'/>
                                 </Col>
                                 <Col sm={5} md={5}>
                                     <h4 className={classes.projAbout}>
@@ -60,7 +53,7 @@ export default function Projects() {
                                         and from there give advice, recommendations, or general tips for others who may be interested
                                         in traveling there. Project features full CRUD functionality and user authentication & authorization via Firebase.<br /><br />
                                         <ThemeProvider theme={theme}>
-                                            <Stack direction="row" spacing={1}>
+                                            <Stack direction="row" spacing={1} style={{ display: "inline-block", whiteSpace: "pre-line" }}>
                                                 <Chip label="React.js" variant="filled" color="accent" />
                                                 <Chip label="Redux" variant="filled" color='accent' />
                                                 <Chip label="Redux-Toolkit" variant="filled" color='accent' />
@@ -87,7 +80,7 @@ export default function Projects() {
                             <Row>
                                 <Col sm={5}>
                                     <h4>
-                                        <img src={placepickerPic} width="550" height="350" />
+                                        <img src={placepickerPic} width="100%" alt='Placepicker'/>
                                     </h4>
                                 </Col>
                                 <Col sm={5}>
@@ -99,7 +92,7 @@ export default function Projects() {
                                         <br />
                                         <br />
                                         <ThemeProvider theme={theme}>
-                                            <Stack direction="row" spacing={1}>
+                                            <Stack direction="row" spacing={1} style={{ display: "inline-block", whiteSpace: "pre-line" }}>
                                                 <Chip label="React.js" variant="filled" color='accent' />
                                                 <Chip label="Node.js" variant="filled" color='accent' />
                                                 <Chip label="Express.js" variant="filled" color='accent' />
@@ -125,11 +118,7 @@ export default function Projects() {
                             <Row>
                                 <Col sm={5}>
                                     <h4>
-                                        <video width="550" height="350" autoPlay loop>
-                                            <source src={dungeonMov} type="video/mp4" controls />
-                                            <source src="movie.ogg" type="video/ogg" />
-                                            Your browser does not support the video tag.
-                                        </video>
+                                        <img src={dungeonMov} width="100%" alt='Dungeon, Darkly'/>
                                     </h4>
                                 </Col>
                                 <Col sm={5}>
@@ -139,7 +128,7 @@ export default function Projects() {
                                         navigate the sPoOky halls of Ravenhurst Manor.
                                         <br /><br />
                                         <ThemeProvider theme={theme}>
-                                            <Stack direction="row" spacing={1}>
+                                            <Stack direction="row" spacing={1} style={{ display: "inline-block", whiteSpace: "pre-line" }}>
                                                 <Chip label="JavaScript" variant="filled" color='accent' />
                                                 <Chip label="Node.js" variant="filled" color='accent' />
                                                 <Chip label="JQuery" variant="filled" color='accent' />
@@ -161,11 +150,7 @@ export default function Projects() {
                             <Row>
                                 <Col sm={5}>
                                     <h4>
-                                        <video width="550" height="350" autoPlay loop>
-                                            <source src={pigLatinMov} type="video/mp4" controls />
-                                            <source src="movie.ogg" type="video/ogg" />
-                                            Your browser does not support the video tag.
-                                        </video>
+                                        <img src={pigLatinMov} width="100%" alt='Pig Lating'/>
                                     </h4>
                                 </Col>
                                 <Col sm={5}>
@@ -186,7 +171,7 @@ export default function Projects() {
                             <Row>
                                 <Col sm={5}>
                                     <h4>
-                                        <img src={galaxyPic} width="550" height="350" />
+                                        <img src={galaxyPic} width="100%" alt='Intergalactic Age Calculator'/>
                                     </h4>
                                 </Col>
                                 <Col sm={5}>
