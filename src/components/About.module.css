@@ -1,0 +1,25 @@
+li {
+    text-align: center;
+    list-style-type: none;
+
+}
+
+.border{
+    padding: 50px;
+    margin: 30px;
+    border: solid 1px var(--color-accent-100);
+    border-radius: 2px;
+    background-color: var(--color-background-100);
+    margin-bottom: 200px;
+    transition: 0.5s;
+}
+
+.border:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+.description {
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+}

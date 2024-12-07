@@ -1,0 +1,42 @@
+.navBarList ul {
+    list-style-type: none;
+  }
+.navBarList li {
+    float: left;
+    display: block;
+  }
+  
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: var(--color-background-100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo, .logo:hover {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .navbar a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 17px;
+    margin-right: 17px;
+    transition: .3s;
+  }
+  
+  .navbar a:hover,
+  .navbar a:active {
+    color: var(--color-accent-100);
+  }
